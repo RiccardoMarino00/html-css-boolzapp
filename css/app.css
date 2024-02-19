@@ -34,7 +34,7 @@ a{
 
 .sidebar{
     flex-shrink: 0;
-    /* display: none; */
+    display: none;
 }
 
 .chat{
@@ -73,6 +73,25 @@ a{
     border: 1px solid black;
 
 
+}
+
+                                    /* RESPONSIVE BREAKPOINT */
+
+@media (min-width: 566px){
+
+}
+
+@media (min-width: 758px){
+    .sidebar{
+        display: block;
+        width: 100px;
+    }
+}
+
+@media (min-width: 982px){
+    .sidebar{
+        width: 200px;
+    }
 }
 
 
