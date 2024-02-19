@@ -25,11 +25,14 @@ a{
 
 .container{
     height: 100vh;
+    padding: 20px;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+
 }
 
 .sidebar{
@@ -53,14 +56,14 @@ a{
 
 .debug .container{
     background-color: dodgerblue;
-    padding: 20px;
+    /* padding: 20px; */
     border: 1px solid black;
 
 }
 
 .debug .row{
     background-color: indianred;
-    padding: 20px;
+    /* padding: 20px; */
     height: 100%;
     border: 1px solid black;
 
@@ -78,7 +81,9 @@ a{
                                     /* RESPONSIVE BREAKPOINT */
 
 @media (min-width: 566px){
-
+    .row{
+        width: 100%;
+    }
 }
 
 @media (min-width: 758px){
@@ -91,6 +96,10 @@ a{
 @media (min-width: 982px){
     .sidebar{
         width: 200px;
+    }
+
+    .row{
+        width: 80%;
     }
 }
 
