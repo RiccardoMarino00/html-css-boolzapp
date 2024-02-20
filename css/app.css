@@ -36,6 +36,8 @@ a{
 
 body{
         font-family: "Lato", sans-serif;
+        background: rgb(220,219,212);
+        background: linear-gradient(360deg, rgba(220,219,212,1) 85%, rgba(77,146,136,1) 85%);
 }
 
   
@@ -51,6 +53,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #eaeaea;
 }
 
 .notifiche-col{
@@ -142,8 +145,8 @@ body{
 }
 
 .contatti-col{
-    overflow-y: scroll;
-    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
 }
 
 .nome-contatto{
@@ -182,6 +185,7 @@ body{
 
 .main.col{
     flex-grow: 1;
+    background-image: url(../img/mine.jpg);
 }
 
 .footer-col{
@@ -196,7 +200,7 @@ body{
 .debug .container{
     /* background-color: dodgerblue; */
     /* padding: 20px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
@@ -204,7 +208,7 @@ body{
     /* background-color: indianred; */
     /* padding: 20px; */
     /* height: 100%; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 
 }
@@ -212,7 +216,7 @@ body{
 .debug .col{
     /* background-color: lightslategrey; */
     /* padding: 20px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 
 }
@@ -229,6 +233,7 @@ body{
     .sidebar{
         display: block;
         width: 80px;
+        background-color: white;
     }
 
     .icon-header{
