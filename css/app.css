@@ -47,6 +47,7 @@ body{
 .sidebar{
     flex-shrink: 0;
     display: none;
+    height: 100%;
 }
 
 .io-col{
@@ -54,6 +55,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #eaeaea;
+    border-right: 1px solid rgba(168, 162, 162, 0.622);
 }
 
 .notifiche-col{
@@ -87,6 +89,7 @@ body{
     color: lightgray;
     font-size: 20px;
     padding: 7px;
+    display: none;
 }
 
 .icon-bell{
@@ -124,6 +127,8 @@ body{
 
 .icona-lente{
     display: none;
+    margin: 5px;
+    margin-left: 8px;
 }
 
 
@@ -133,6 +138,7 @@ body{
     margin: 7px;
     border: 1px solid lightgray;
     padding: 3px;
+    border: none;
 
 }
 
@@ -145,8 +151,9 @@ body{
 }
 
 .contatti-col{
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     /* overflow-x: hidden; */
+    flex-grow: 1;
 }
 
 .nome-contatto{
@@ -158,6 +165,8 @@ body{
 .header-col{
     display: flex;
     justify-content: space-between;
+    background-color: #eaeaea;
+    align-items: center;
 }
 
 .profile{
@@ -186,12 +195,26 @@ body{
 .main.col{
     flex-grow: 1;
     background-image: url(../img/mine.jpg);
+    /* margin: 4px; */
 }
 
 .footer-col{
     display: flex;
     justify-content: space-between;
+    background-color: #f2eeeb;
+    align-items: center;
 }
+
+
+.icon-gray{
+    display: inline-block;
+    color: rgb(136, 133, 133);
+    font-size: 25px;
+    padding: 7px;
+    margin: 6px;
+    display: none;
+}
+
 
 
                   /* DEBUG */
@@ -227,13 +250,21 @@ body{
     .row{
         width: 100%;
     }
+
+    /* .msg-input{
+        display: inline-block;
+        width: 100px;
+        padding: 8px;
+        margin: 5px;
+    } */
 }
 
 @media (min-width: 758px){
     .sidebar{
-        display: block;
-        width: 80px;
+        display: flex;
+        /* width: 80px; */
         background-color: white;
+        flex-direction: column;
     }
 
     .icon-header{
@@ -247,6 +278,30 @@ body{
     .emoji{
         display: inline-block;
     }
+
+    .icon-lightgray{
+        display: inline-block;
+        color: lightgray;
+        font-size: 20px;
+        padding: 7px;
+        display: inline-block;
+    }
+
+    .icon-gray{
+        display: inline-block;
+        color: rgb(136, 133, 133);
+        font-size: 25px;
+        padding: 7px;
+        margin: 6px;
+        display: inline-block;
+    }
+
+    /* .msg-input{
+        display: inline-block;
+        width: 300px;
+        padding: 8px;
+        margin: 5px;
+    } */
 
    
     
@@ -267,6 +322,7 @@ body{
 
     .icon-ul{
         display: flex;
+        margin: 7px;
     }
 
     .notifiche-col{
@@ -277,6 +333,7 @@ body{
 
     .cerca-col{
         display: block;
+        margin: 8px;
     }
 
     .notifiche-col{
@@ -307,6 +364,13 @@ body{
     color: lightgray;
     display: inline-block;
   }
+
+  /* .msg-input{
+    display: inline-block;
+    width: 400px;
+    padding: 8px;
+    margin: 5px;
+  } */
 }
 
 
