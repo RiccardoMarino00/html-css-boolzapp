@@ -31,7 +31,10 @@ a{
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+}
 
+body{
+        font-family: "Lato", sans-serif;
 }
 
   
@@ -46,13 +49,14 @@ a{
 .io-col{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .notifiche-col{
     display: none;
 }
 
-.icon{
+.icon-ul{
     display: none;
 }
 
@@ -63,6 +67,48 @@ a{
 
 .avatar{
     display: flex;
+}
+
+.img-profile{
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin: 7px;
+}
+
+.icon-lightgray{
+    display: inline-block;
+    color: lightgray;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.icon-bell{
+    font-size: 20px;
+    color: #a6d7f9;
+    padding: 10px;
+    aspect-ratio: 1 / 1;
+    padding-top: 12px;
+
+}
+
+.icona-notifiche{
+    background-color: white;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.text-notifiche{
+    font-size: 15px;
+    
+}
+
+.text-notifiche-lightgray{
+    color: rgb(124, 121, 121);
+    font-size: 14px;
+    text-decoration: underline;
+
 }
 
                                  /* CONTENT */
@@ -109,14 +155,14 @@ a{
 
 
 .debug .container{
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
     /* padding: 20px; */
     border: 1px solid black;
 
 }
 
 .debug .row{
-    background-color: indianred;
+    /* background-color: indianred; */
     /* padding: 20px; */
     height: 100%;
     border: 1px solid black;
@@ -125,7 +171,7 @@ a{
 }
 
 .debug .col{
-    background-color: lightslategrey;
+    /* background-color: lightslategrey; */
     /* padding: 20px; */
     border: 1px solid black;
 
@@ -164,7 +210,7 @@ a{
 
 @media (min-width: 982px){
     .sidebar{
-        width: 220px;
+        width: 300px;
     }
 
     .row{
@@ -175,12 +221,14 @@ a{
         padding: 20px;
     }
 
-    .icon{
-        display: inline-block;
+    .icon-ul{
+        display: flex;
     }
 
     .notifiche-col{
-        display: block;
+        display: flex;
+        align-items: center;
+        background-color: #a6d7f9;
     }
 
     .cerca-col{
