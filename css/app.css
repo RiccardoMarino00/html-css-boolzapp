@@ -215,6 +215,40 @@ body{
     display: none;
 }
 
+.msg-input{
+    flex-grow: 1;
+    /* width: 100%; */
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.msg-sent, .msg-recived{
+    max-width: 400px;
+    /* width: 100; */
+}
+
+.msg-sent{
+    align-self: self-end;
+    background-color: #def8c0;
+    margin-top: 70px;
+    margin-right: 120px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.msg-recived{
+    align-self: self-start;
+    background-color: #def8c0;
+    margin-top: 70px;
+    margin-left: 120px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
 
 
                   /* DEBUG */
@@ -248,7 +282,22 @@ body{
 
 @media (min-width: 566px){
     .row{
-        width: 100%;
+        /* width: 100%; */
+    }
+
+    .icon-gray{
+        display: inline-block;
+        color: rgb(136, 133, 133);
+        font-size: 25px;
+        padding: 7px;
+        margin: 6px;
+        display: inline-block;
+    }
+
+    .emoji,
+    .audio {
+        display: inline-block;
+
     }
 
     /* .msg-input{
@@ -309,11 +358,11 @@ body{
 
 @media (min-width: 982px){
     .sidebar{
-        width: 300px;
+        /* width: 300px; */
     }
 
     .row{
-        width: 80%;
+        /* width: 80%; */
     }
 
     .container{
