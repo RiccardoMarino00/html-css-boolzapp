@@ -75,7 +75,17 @@ body{
     display: flex;
     align-items: center;
     position: relative;
+    border-bottom: 1px solid rgba(204, 199, 199, 0.622);
+    border-right: 1px solid rgba(204, 199, 199, 0.622);
 }
+
+.avatar-io{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
 
 .img-profile{
     width: 50px;
@@ -123,23 +133,33 @@ body{
 .ricerca{
     display: flex;
     align-items: center;
+    position: relative;
+
 }
 
 .icona-lente{
     display: none;
     margin: 5px;
     margin-left: 8px;
+    position: absolute;
+    top: 4.5px;
+    pointer-events: none;
 }
 
 
 .input-search{
-    width: 250px;
+    width: 100%;
     color: rgb(124, 121, 121);
     margin: 7px;
     border: 1px solid lightgray;
     padding: 3px;
     border: none;
+    padding-left: 40px;
+    outline: none;
+}
 
+.input-search input :focus-visible + .icona-lente{
+     color: blue;
 }
 
 .contatti-sp{
@@ -246,6 +266,11 @@ body{
     margin-left: 120px;
     padding: 15px;
     border-radius: 20px;
+}
+
+.text-input{
+    flex-grow: 1;
+    width: 100%;
 }
 
 
